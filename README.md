@@ -43,6 +43,13 @@ sudo ./install.sh
 ```
 The install.sh script will configure and request to reboot the system.
 
+JetPack 4.6.1 may issue warning like "I: The initramfs will attempt to resume from /dev/zram3"
+which is obviously wrong device. In this case try run install script as
+```
+RESUME=/dev/mmcblk0 ./install-nano.sh
+```
+
+
 Rebooting to permanent write-mode (disabling the overlay fs)
 ============
 Execute: 
