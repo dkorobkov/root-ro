@@ -43,10 +43,14 @@ sudo ./install.sh
 ```
 The install.sh script will configure and request to reboot the system.
 
-JetPack 4.6.1 may issue warning like "I: The initramfs will attempt to resume from /dev/zram3"
+Installing on Jetson Nano with JetPack 4.6.2 may issue warning like "I: The initramfs will attempt to resume from /dev/zram3"
 which is obviously wrong device. In this case try run install script as
 ```
 sudo RESUME=/dev/mmcblk0 ./install-nano.sh
+```
+In case of mkinitramfs errors it may help to remove cryptsetup:
+```
+sudo apt remove cryptsetup
 ```
 
 
