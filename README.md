@@ -1,4 +1,4 @@
-Read-only root filesystem for Raspbian Stretch
+Read-only root filesystem for Raspbian Stretch / Jetson Nano
 ============================================
 This repository contains some useful files that allow you to use a Raspberry PI using a readonly filesystem.
 After running install.sh everything will be set up and the system will reboot into read-only mode.
